@@ -152,6 +152,17 @@ export function DestinationDetail() {
             <p className="text-gray-600 leading-relaxed">
               {destinationInfo.description}
             </p>
+            {destinationInfo.wikiUrl && (
+              <a
+                href={destinationInfo.wikiUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-2 text-blue-600 hover:text-blue-800"
+              >
+                <Globe size={16} />
+                Wikipedia'da İncele
+              </a>
+            )}
           </InfoCard>
 
           {/* En İyi Ziyaret Zamanı */}
